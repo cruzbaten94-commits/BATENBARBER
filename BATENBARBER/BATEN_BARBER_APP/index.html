@@ -1,0 +1,30 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0b"><title>BATEN BARBER</title>
+<link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="img/icon-192.png"><link rel="stylesheet" href="css/style.css"></head><body>
+<header><a class="brand" href="#" data-page="inicio"><b>BB</b><span>BATEN<small>BARBER</small></span></a><button id="menu">☰</button>
+<nav id="nav"><button data-page="inicio" class="active">Inicio</button><button data-page="tarjeta">Mi tarjeta</button><button data-page="citas">Mis citas</button><button data-page="admin">Administrador</button></nav></header>
+<main>
+<section id="inicio" class="page active">
+<div class="welcome"><p class="eyebrow">BIENVENIDO A</p><h1>BATEN <em>BARBER</em></h1><p>Tu estilo, tu momento.</p></div>
+<div class="hero"><div><small class="eyebrow">RESERVA EN MINUTOS</small><h2>Tu próximo corte<br>comienza aquí.</h2><p>Elige tu servicio y solicita tu cita.</p><button id="goBook" class="gold">RESERVAR MI CITA ↗</button></div><div class="art">✂<small>ESTILO BATEN</small></div></div>
+<h2 class="section">Nuestros servicios</h2><div id="services" class="services"></div>
+<div id="booking" class="panel"><h2>Solicitar una cita</h2><form id="bookForm" class="form">
+<label>Nombre<input id="name" required></label><label>Teléfono / WhatsApp<input id="phone" required inputmode="tel"></label>
+<label>Correo (opcional)<input id="email" type="email"></label><label>Servicio<select id="service" required></select></label>
+<label>Fecha<input id="date" type="date" required></label><label>Hora disponible<select id="time" required><option value="">Elige una fecha</option></select></label>
+<button class="gold wide">SOLICITAR Y AVISAR POR WHATSAPP ↗</button>
+<p class="hint wide">La solicitud queda pendiente. Se abrirá WhatsApp con los datos para que el cliente pulse ENVIAR y te avise.</p></form></div>
+<div class="contact"><div><b>Horario</b><p>Lunes a viernes · 7:00 AM – 6:00 PM</p></div><div><b>WhatsApp</b><p>4314 1625</p></div><div><b>Ubicación</b><p>Próximamente</p></div></div>
+</section>
+<section id="tarjeta" class="page"><p class="eyebrow">CLIENTE BATEN</p><h1>Mi tarjeta</h1><div class="loyalty"><div>BATEN BARBER <span>CLIENTE</span></div><h2 id="cardName">TU NOMBRE</h2><small>TARJETA DE CLIENTE</small><footer>ESTILO · CONFIANZA · CALIDAD <b>BB ✦</b></footer></div>
+<div class="panel"><h2>Mis sellos</h2><div class="progress"><b id="progress">0 de 10 sellos</b><span id="reward">Completa 10 visitas y recibe un corte gratis.</span></div><div id="stamps" class="stamps"></div><p class="hint">El administrador agrega un sello después de cada visita realizada.</p></div>
+<div class="panel"><h2>Mis datos</h2><form id="profileForm" class="form"><label>Nombre<input id="pName" required></label><label>Teléfono<input id="pPhone" required></label><label>Correo<input id="pEmail" type="email"></label><button class="gold wide">GUARDAR</button></form></div></section>
+<section id="citas" class="page"><p class="eyebrow">TU AGENDA</p><h1>Mis citas</h1><div class="panel"><form id="lookup"><label>Teléfono usado al reservar<input id="lookupPhone" required></label><button class="gold">BUSCAR CITAS</button></form></div><div id="clientList"></div></section>
+<section id="admin" class="page"><p class="eyebrow">CONTROL DEL NEGOCIO</p><h1>Administrador</h1>
+<div id="login" class="panel"><h2>Acceso administrador</h2><form id="loginForm"><input id="pin" type="password" placeholder="PIN" required><button class="gold">ENTRAR</button></form></div>
+<div id="dashboard" class="hidden"><div id="stats" class="stats"></div><div class="adminGrid"><div class="panel"><h2>Solicitudes recibidas</h2><div id="adminList"></div></div><div class="panel"><h2>Publicar horario</h2><form id="slotForm" class="form"><label>Fecha<input id="slotDate" type="date" required></label><label>Hora<input id="slotTime" type="time" required></label><button class="gold wide">AGREGAR HORARIO</button></form><hr><h3>Horarios publicados</h3><div id="slots"></div><hr><button id="logout" class="outline">CERRAR SESIÓN</button></div></div></div>
+</section></main>
+<footer class="sitefoot">© BATEN BARBER · HECHO PARA TU ESTILO</footer>
+<nav class="bottom"><button data-page="inicio">⌂<small>Inicio</small></button><button data-page="tarjeta">▣<small>Tarjeta</small></button><button data-page="citas">▤<small>Mis citas</small></button><button data-page="admin">⚙<small>Admin</small></button></nav>
+<div id="toast"></div><script src="js/app.js"></script><script>if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'));</script></body></html>

@@ -1,0 +1,7 @@
+BATEN BARBER - PROTOTIPO RESPONSIVO E INSTALABLE
+
+La aplicación incluye Inicio, Mi tarjeta, Mis citas y Administrador. El cliente solicita una cita, elige un horario que el administrador publicó y WhatsApp se abre con el aviso dirigido al número +502 4314 1625. El cliente debe pulsar ENVIAR. El administrador acepta o rechaza la cita.
+
+SELLOS: cuando una cita está confirmada y el servicio ya se realizó, el administrador pulsa “REGISTRAR VISITA Y SELLAR”. El cliente verá el sello en Mi tarjeta. Al llegar a 10 sellos, la tarjeta muestra que tiene un corte gratis. Cada cita solo se puede sellar una vez.
+
+IMPORTANTE: el acceso de administrador de esta versión es solo demostrativo y el PIN está definido dentro del JavaScript; ocultarlo de la pantalla no lo convierte en seguro para publicar. Se necesita un servidor con autenticación real. Esta versión guarda datos localmente en el navegador. Para que el administrador y los clientes vean la misma información desde distintos teléfonos/computadoras, hace falta conectar una base de datos y un inicio de sesión real. Para avisos automáticos de WhatsApp sin que el cliente pulse ENVIAR, se necesita WhatsApp Business Platform y un servidor. Para instalar como app, publicar primero en un hosting HTTPS y usar “Agregar a pantalla de inicio” desde el navegador.
